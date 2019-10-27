@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/cas-client-demo1" />
+    <file type="web" url="file://$PROJECT_DIR$/casclient-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/casclient-demo2" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-cart-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-cart-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-page-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-pay-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-seckill-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-seckill-task" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-seckill-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-sellergoods-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-user-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-user-web" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-security-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-security-casclient" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-reverser/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-shop-web/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-redis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-solr-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-solr-test/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-solr-util/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-search-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-framework-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/comyougou-page-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-page-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/jms-productor/pom.xml" />
+        <option value="$PROJECT_DIR$/jma-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/jms-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/springBoot-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-alidayu-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-user-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/casclient-test1/pom.xml" />
+        <option value="$PROJECT_DIR$/castlient-test2/pom.xml" />
+        <option value="$PROJECT_DIR$/cas-client-demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/casclient-demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-security-casclient/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-cart-web/pom.xml" />
+        <option value="$PROJECT_DIR$/WXpay-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-pay-interface/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://mybatis.org/dtd/mybatis-3-mapper.dtd" location="D:/dev/install/spring-framework-4.2.4.RELEASE/schema/mybatis/mybatis-3-mapper.dtd" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

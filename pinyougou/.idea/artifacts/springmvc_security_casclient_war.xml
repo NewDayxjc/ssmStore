@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc-security-casclient:war">
+    <output-path>$PROJECT_DIR$/springmvc-security-casclient/target</output-path>
+    <root id="archive" name="springmvc-security-casclient-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springmvc-security-casclient:war exploded" />
+    </root>
+  </artifact>
+</component>

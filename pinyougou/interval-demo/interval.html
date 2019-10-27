@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interval 测试</title>
+
+    <script src="angularjs/angular.min.js"></script>
+<script>
+    var app=angular.module('pinyougou',[]);
+    app.controller('interval',function ($scope,$interval) {
+        $scope.num=5878964456;
+        var time=$interval(function () {
+
+            $scope.num-=1000;
+            if($scope.num<=0){
+                $interval.cancel(time)
+
+            }
+            $scope.time=countTime($scope.num);
+        },1000);
+    })
+    /**
+     * 换算毫秒   换算成天  时   分 秒
+     * @param num
+     * @returns {string}
+     */
+
+    countTime=function(num){
+        //定义时间
+        //天
+        var days=parseInt(num/(1000*60*60*24));
+        //时
+        var time=parseInt(num%days/(1000*60*60));
+
+        //分
+        var minute=parseInt((num-time*1000*60*60-days*1000*60*60*24)/(1000*60));
+
+        var second=parseInt((num-days*1000*60*60*24-time*1000*60*60-minute*1000*60)/1000);
+        return days+"--"+time+"--"+minute+"--"+second;
+    }
+
+
+
+
+</script>
+
+</head>
+
+<body ng-app="pinyougou" ng-controller="interval">
+{{time}}
+</body>
+</html>

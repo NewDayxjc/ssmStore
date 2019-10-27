@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+             http://www.springframework.org/schema/beans/spring-beans.xsd
+             http://www.springframework.org/schema/security
+             http://www.springframework.org/schema/security/spring-security.xsd">
+<!--设置页面不登录也可以访问-->
+
+    <http pattern="/**.html" security="none"></http>
+    <http pattern="/css/**" security="none"></http>
+    <http pattern="/img/**" security="none"></http>
+    <http pattern="/js/**" security="none"></http>
+    <http pattern="/plugins/**" security="none"></http>
+<!--页面的拦截规则 use-expressions:是否启动SPEL表达式-->
+    <!--<http use-expressions="false"> 默认是true-->
+    <!--第二种写法-->
+    <!--<http>-->
+        <!--&lt;!&ndash;当前用户必须有ROLE_USER的角色才可以&ndash;&gt;-->
+        <!--<intercept-url pattern="/**" access="hasRole('ROLE_USER')"/>&lt;!&ndash;/*只包含本级目录下的文件  /**只包含本级及其子目录下的文件&ndash;&gt;-->
+
+    <!--第二种写法-->
+    <http use-expressions="false">
+    <!--当前用户必须有ROLE_USER的角色才可以-->
+    <intercept-url pattern="/WEB-INF" access="ROLE_ADMIN"/><!--/*只包含本级目录下的文件  /**只包含本级及其子目录下的文件-->
+    <!--开启表单登录功能 自动生成表单-->
+        <!--<form-login/>-->
+        <!--指定登录页面  /login.html必须加/
+        ROLE必须大写
+        always-use-default-target:"true"  总是跳转到默认页面  default-target-url="/admin/index.html"
+        -->
+        <form-login login-page="/login.html" default-target-url="/admin/index.html" authentication-failure-url="/login.html" always-use-default-target="true"/>
+    <!--关闭csrf，若不关闭会出现403错误-->
+        <csrf disabled="true"/>
+        <headers>
+            <frame-options policy="SAMEORIGIN"/>  <!--允许使用内置框架-->
+        </headers>
+        <!--自动产生logout的地址
+        logout-url="/aaa" 指定退出地址
+        logout-success-url="" 指定退出成功跳转到地址
+        -->
+        <logout/>
+    </http>
+    <!--认证管理器-->
+    <authentication-manager>
+        <!--认证提供者-->
+        <authentication-provider>
+            <user-service>
+                <!--配置当前系统用户 authorities:使用角色-->
+                <user name="admin" password="123456" authorities="ROLE_ADMIN"/>
+                <user name="sunwukong" password="dashen" authorities="ROLE_ADMIN"/>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>
